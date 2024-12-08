@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>争いの年表</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <header>
+                <h1>争いと革命年表</h1>
+                <p>年表から争いや革命の原因を探ります。</p>
+                <P>ChatGPTを使って作成しています。（2024.9.21更新）</P>
+            </header>
+            <section class="timeline">
+                <!-- 1600年 -->
+                <div class="timeline-block">
+                    <div class="year-block">1600</div>
+                    <p>今のところイベントはありません</p>
+                </div>
+
+                <!-- 1650年 -->
+                <div class="timeline-block">
+                    <div class="year-block">1650</div>
+                    <p>今のところイベントはありません</p>
+                </div>
+
+                <!-- 1700年 -->
+                <div class="timeline-block">
+                    <div class="year-block">1700</div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>名誉革命 (1688年)</h3>
+                            <h4>残虐度 ★☆☆☆☆</h4>
+                            <p> ジェームズ2世が退位し、彼の娘メアリー2世とその夫ウィリアム3世が共同で王位に就いた出来事です。
+                             この革命は、ほとんど血を流さずに政権が移行したことから「名誉革命」と呼ばれています。
+                            </p>
+                            <button class="open-button" onclick="toggleDetails(this)">Detail</button>
+                            <div class="details-content">
+                                <p>主な背景には、ジェームズ2世がカトリック教徒であり、カトリック政策を推し進めたことで、
+                                    プロテスタントの議会や国民との間に深刻な対立が生じたことが挙げられます。
+                                    ジェームズ2世の統治に不満を持つ勢力がウィリアムを招いて介入し、ジェームズ2世は逃亡を余儀なくされました。
+                                    この革命の結果、イギリスでは議会の力が大幅に強化され、絶対王政が事実上終焉を迎えました。
+                                    また、「権利の章典」（Bill of Rights）が1689年に制定され、王権は制限され、立憲君主制の確立につながりました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1750年 -->
+                <div class="timeline-block">
+                    <div class="year-block">1750</div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>七年戦争 (1756年 - 1763年)</h3>
+                            <p>イギリスとフランスを中心に、ヨーロッパ全体で行われた戦争。</p>
+                            <p class="hidden-details">結果的にイギリスが大きな植民地を獲得し、フランスは多くの領地を失いました。</p>
+                            <button class="open-button" onclick="toggleDetails(this)">Detail</button>
+                            <div class="details-content">
+                            <div class="question">なんで七年戦争は起きたの？</div>
+                            <div class="answer">
+                            <h4>1. 領土争い</h4>
+                                <p>オーストリアとプロイセンという国が土地を巡って争っていたのが一番の原因です。特に、オーストリアはプロイセンに奪われた「シュレージエン」という地域を取り戻したいと考えていました。</p>
+                            <h4>2. 国同士の仲直りと新しい同盟</h4>    
+                                <p>当時、国々の間で「誰が誰の味方か」が大きく変わりました。オーストリアとフランスが仲直りをして手を組み、一方でプロイセンはイギリスと同盟を結びました。この新しい組み合わせが戦争を引き起こすきっかけになりました。</p>
+                            <h4>3. 植民地の争い</h4>
+                                <p>イギリスとフランスは、世界中の植民地（北アメリカやインド）を巡って争っていました。この植民地の取り合いも戦争の原因のひとつです。</p>
+                            <h4>4. プロイセンの力を抑えたい</h4>
+                                <p>プロイセンという国が強くなりすぎるのを他の国々（オーストリア、フランス、ロシアなど）が恐れたため、プロイセンを止めようと戦うことになりました。</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>フランス革命 (1789年)</h3>
+                            <p>フランスにおいて絶対王政を終わらせ、共和制を確立するための革命。</p>
+                            <p class="hidden-details">バスティーユ襲撃が象徴的な始まりとなりました。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>ナポレオンのクーデター (1799年)</h3>
+                        <p>ナポレオン・ボナパルトが政権を握り、フランス革命が終結。</p>
+                        <p class="hidden-details">これにより、フランスは新しい時代へと移行しました。</p>
+                    </div>
+                </div>
+
+                <!-- 1800年 -->
+                <div class="timeline-block">
+                    <div class="year-block">1800</div>
+                    <div class="timeline-item">
+                        
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 残虐年表</p>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+
+    </div>
+</body>
+</html>

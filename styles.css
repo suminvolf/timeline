@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5; /* 柔らかいグレー */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a3f44 0%, #5b6369 100%);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.0em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d3d3d3;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-block {
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 100px; /* 左側に余白を確保 */
+}
+
+.timeline-block:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50px; /* 縦ラインを左側に配置 */
+    width: 5px;
+    height: 100%;
+    background-color: #3a3f44; /* 左側の縦ライン */
+}
+
+.year-block {
+    font-size: 1.4em; /* 少し小さめのフォントサイズ */
+    font-weight: bold;
+    color: #3a3f44;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0); /* 左に表示 */
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    margin-top: 20px; /* 年号との距離を確保 */
+}
+
+.timeline-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3a3f44;
+}
+
+.timeline-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+.open-button {
+    background-color: #3a3f44;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.details-content {
+    display: none; /* 初期状態で詳細は非表示 */
+    margin-top: 15px;
+}
+
+/* 会話風の質問部分 */
+.question {
+    background-color: #d9eaf7;
+    color: #3a3f44;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* 回答部分 */
+.answer {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .timeline-block {
+        padding-left: 80px; /* スマホ用に調整 */
+    }
+
+    .timeline-block:before {
+        left: 30px; /* スマホ用に左側に配置 */
+    }
+
+    .year-block {
+        font-size: 1.2em; /* スマホ用にサイズ調整 */
+        left: 0; /* 左側に寄せる */
+        transform: translateX(0);
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.3em;
+    }
+}
